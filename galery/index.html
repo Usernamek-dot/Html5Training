@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>galery</title>
+</head>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+	integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+
+<body>
+	<h1 class="display-4 my-4 text-center"> images</h1>
+	<div class="container">
+		<div class="card-columns" id="koko">
+			<!-----card						
+				<div class="card">
+					
+					<a href="" data-toggle="modal" data-target="#exampleModal">
+						<img src="images/1.jpg"
+							alt="" class="card-img-top">
+					</a>
+				</div>
+			</div>
+			
+			<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+				aria-hidden="true">
+				
+				<button type="button" class="close mr-3" data-dismiss="modal" aria-label="Close">
+					<span aria-hidden="true">&times;</span>
+				</button>
+				
+				<div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+					<img src="images/1.jpg"
+						alt="" class="img-fluid rounded">
+	
+				</div>---->
+
+		</div>
+		<!---------------ciclo en java para repetir las imgs-->
+		<script>
+			var images = [1, 2, 3, 4, 5, 6];
+			var koko = document.getElementById('koko');
+			//ciclo
+			for (image of images) {
+				//inner es para insertar codigo en html
+				//el signo + es para que se repita el modal segun la variable images
+				koko.innerHTML += `
+		<!-----card|---->
+			<div class="card">
+				<!------ a: para que se pueda hacer click en la imagen-->
+				<a href="" data-toggle="modal" data-target="#id${image}">
+					<img src="images/${image}.jpg"
+						alt="" class="card-img-top" width="400">
+				</a>
+			</div>
+		<!-- Modal -->
+		<div class="modal fade" id="id${image}" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+			aria-hidden="true">
+			<!----boton------>
+			<button type="button" class="close mr-3" data-dismiss="modal" aria-label="Close">
+				<span aria-hidden="true">&times;</span>
+			</button>
+			<!------imagen--->
+			<div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+				<img src="images/${image}.jpg"
+					alt="" class="img-fluid rounded" width="400">
+
+			</div>
+		</div>
+		 `
+			}
+		</script>
+
+
+
+
+		<!-------jquery-->
+		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+			integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+		</script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+			integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+		</script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+			integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+		</script>
+
+</body>
+
+</html>
