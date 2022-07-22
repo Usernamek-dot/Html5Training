@@ -1,0 +1,18 @@
+.cM{background:darkcyan;} .c1{background:fuchsia;} .c2{background:yellow;}  .c3{background:darkorange;}
+.c4{background:blanchedalmond;} .c5{background:lawngreen;} .c6{background:ivory;}
+.cM2{background:gold;} .cM3{background:red;}
+
+.primero{background:gainsboro;}  .segundo{background:khaki;} .tercero{background:indianred;}
+.cuarto{background: lavender;} .quinto{background: lawngreen;} 
+
+.dos{background: lightcyan;} .cuatro{background: lightgreen;} .dos1{background: magenta;} 
+.dos3{background: tan;}  .dos4{background: hotpink;} 
+
+.dos-d{background: goldenrod;} .dos1-1{background: olive;} .cuatro-1{background: yellowgreen;} 
+.dos3-1{background: grey;}  .dos4-1{background: honeydew;} 
+
+.footer{background: lightcoral;}
+
+.titulo , .tabla , .imagen { text-align:center; } .parrafo{margin:auto;}  .imagen{width:30%; }
+
+.tres, .tresr , .tresl{ border : 1px solid #000; }
