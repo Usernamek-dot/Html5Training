@@ -1,0 +1,22 @@
+*{ padding :0; margin :0;}
+
+.padre{
+    background:darkgoldenrod;
+    width: 800px;
+    height: 500px;
+    padding: 40px;
+    display:flex; /*eje horizontal*/
+    flex-direction: row;
+    flex-wrap : wrap;/*ajusta hijos al contenedor*/
+
+}
+
+img{
+    width:20%;
+    height:200px;
+    opacity: .5;
+}
+
+img:hover{
+    opacity: 1;
+}

@@ -1,0 +1,44 @@
+*{ margin:0; padding:0;}
+
+.padre{
+    background:darkblue; 
+    width:80%;       /*si voy a usar el eje principal(horizontal) siempre definir width*/
+    height:600px;       /*si voy a usar el eje secundario(vertical) siempre definir height*/
+    margin:auto 20px;
+    display:flex;
+    flex-flow: row wrap;/*combinación de flex direction y flex wrap*/
+    justify-content: space-around;/*eje horizontal*/
+}
+
+.hijo{
+    width:100px; 
+    height:100px; 
+    background:darkcyan; 
+    color:#fff;
+    font-size:40px; 
+    margin:10px; 
+    text-align :center;}
+
+    
+.padre2{
+    background:darkblue; 
+    width:80%;       /*si voy a usar el eje principal(horizontal) siempre definir width*/
+    height:600px;       /*si voy a usar el eje secundario(vertical) siempre definir height*/
+    margin:auto 20px;
+    display:flex;
+}
+
+.uno{
+    width:300px; 
+    height:100px; 
+    background:darkcyan; 
+    color:#fff;
+    font-size:40px; 
+    margin:10px; 
+    text-align :center;
+    flex-grow: 2;
+}
+.dos{ flex-grow : 2;}
+
+
+  
