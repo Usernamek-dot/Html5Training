@@ -1,0 +1,30 @@
+.padre {
+    width: 500px;
+    /*centrar**/
+    margin: 0 auto;
+    background-color: antiquewhite;
+    padding: 20px;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    display: flex;
+}
+
+.contenido {
+    background-color: aquamarine;
+    width: 80%;
+    min-height: 500px;
+    border: beige 1px solid;
+    float: right;
+}
+
+.eldellado {
+    background-color: snow;
+    width: auto;
+    min-height: 500px;
+    float: left;
+}
+
+.clearfix {
+    clear: both;
+    /*hack para limpiar estilos anteriores*/
+}

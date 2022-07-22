@@ -1,0 +1,44 @@
+  * {
+      margin: 0;
+      padding: 0;
+  }
+  
+  html,
+  body {
+      width: 100%;
+      height: 100%;
+  }
+  
+  body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
+  
+  .padre {
+      width: 500px;
+      background-color: antiquewhite;
+      padding: 20px;
+      font-family: 'Courier New', Courier, monospace;
+      text-align: center;
+      display: flex;
+      flex-wrap: wrap;
+  }
+  
+  .contenido {
+      background-color: aquamarine;
+      width: 70%;
+      min-height: 500px;
+      border: beige 1px solid;
+  }
+  
+  .eldellado {
+      background-color: snow;
+      width: 25%;
+      min-height: 500px;
+      margin-left: 20px;
+  }
+  
+  h2 {
+      flex-basis: 100%;
+  }
